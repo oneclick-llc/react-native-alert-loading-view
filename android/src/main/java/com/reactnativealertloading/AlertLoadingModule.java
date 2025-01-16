@@ -111,6 +111,7 @@ public class AlertLoadingModule extends ReactContextBaseJavaModule {
     }
 
     final Dialog dialog = new Dialog(activity);
+    dialog.setCancelable(false);
     dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
     dialog.setContentView(frameLayout);
     final Window window = dialog.getWindow();
